@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Empowering Digital Literacy!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="tagline">Empowering Digital Literacy!</div>
+  </header>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="tutorials.html">Tutorials</a>
+    <a href="chatbot.html">AI Chat</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+  <div class="accessibility-bar">
+    <button onclick="changeFontSize(1)">A+</button>
+    <button onclick="changeFontSize(-1)">A-</button>
+    <select id="languageSelect" onchange="changeLanguage()">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+      <option value="es">Español</option>
+      <!-- Add more languages -->
+    </select>
+    <button onclick="startVoiceCommand()">🎤 Voice</button>
+  </div>
+
+  <!-- Hero Section -->
+  <section style="background: #c9e6faba; border-radius: 18px; margin: 2rem auto 1rem auto; max-width: 850px; padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 16px rgba(19, 118, 232, 0.07);">
+    <h1 style="font-size:2.4rem; color:#0c4483; margin-bottom:1rem;">Welcome to Your Digital Journey! 🚀</h1>
+    <p style="font-size:1.3rem; color:#222;">
+      Unlock the power of technology—one easy step at a time.<br>
+      <span style="color:#43a047;"><b>Learn. Connect. Thrive.</b></span>
+    </p>
+    <a href="tutorials.html" style="display:inline-block; margin-top:1.5rem; background:#1565c0; color:#fff; padding:0.9em 2em; border-radius:30px; font-size:1.1em; text-decoration:none; font-weight:bold; box-shadow:0 2px 8px rgba(21,101,192,0.11); transition:background 0.2s;">Start Learning Now</a>
+  </section>
+
+  <div class="container">
+    <h2 style="color:#43a047;">Why Digital Literacy Matters</h2>
+    <ul style="font-size:1.15rem; margin-bottom:1.5rem;">
+      <li>✔️ Stay connected with loved ones using WhatsApp and video calls</li>
+      <li>✔️ Make safe and easy payments with Paytm & Google Pay</li>
+      <li>✔️ Explore new places and never get lost with Google Maps</li>
+      <li>✔️ Access government services, news, and entertainment online</li>
+      <li>✔️ Boost your confidence and independence in the digital world</li>
+    </ul>
+
+    <h2 style="color:#1565c0;">What Makes Us Special?</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:2rem; margin:2rem 0;">
+      <div style="flex:1 1 220px; background:#ffffffbe; border-radius:12px; box-shadow:0 2px 12px rgba(21,101,192,0.05); padding:1.5rem;">
+        <h3 style="color:#43a047;">👩‍🏫 Simple, Step-by-Step Tutorials</h3>
+        <p>No jargon, no confusion—just clear, friendly guides and videos.</p>
+      </div>
+      <div style="flex:1 1 220px; background:#ffffffbb; border-radius:12px; box-shadow:0 2px 12px rgba(21,101,192,0.05); padding:1.5rem;">
+        <h3 style="color:#43a047;">🤖 24/7 AI Help</h3>
+        <p>Ask <b>DigiBuddy</b> anything, anytime—your patient digital friend.</p>
+      </div>
+      <div style="flex:1 1 220px; background:#ffffffbb; border-radius:12px; box-shadow:0 2px 12px rgba(21,101,192,0.05); padding:1.5rem;">
+        <h3 style="color:#43a047;">🌏 Multiple Languages & Voice Support</h3>
+        <p>Learn in your own language and use voice commands for ease.</p>
+      </div>
+    </div>
+
+    <h2 style="color:#317734;">Hear from Our Learners</h2>
+    <blockquote style="background:#e6facdc5; border-left:6px solid #43a047; margin:1.5rem 0; padding:1rem 2rem; border-radius:10px; font-style:italic;">
+      "I never thought I could use a smartphone so confidently. Now I video call my grandchildren every week! Thank you for making it so easy." <br>
+      <span style="font-weight:bold; color:#1565c0;">— Mrs. Sharma, 67</span>
+    </blockquote>
+    <blockquote style="background:#e9fad4c5; border-left:6px solid #43a047; margin:1.5rem 0; padding:1rem 2rem; border-radius:10px; font-style:italic;">
+      "Paying bills and finding places is now a breeze. This site is a blessing for seniors like me!" <br>
+      <span style="font-weight:bold; color:#1565c0;">— Mr. Patel, 72</span>
+    </blockquote>
+
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="tutorials.html" style="background:#43a047; color:#fff; padding:1em 2.5em; border-radius:30px; font-size:1.2em; text-decoration:none; font-weight:bold; box-shadow:0 2px 8px rgba(67,160,71,0.11); transition:background 0.2s;">Explore Tutorials</a>
+      <a href="chatbot.html" style="background:#1565c0; color:#fff; padding:1em 2.5em; border-radius:30px; font-size:1.2em; text-decoration:none; font-weight:bold; margin-left:1.5em; box-shadow:0 2px 8px rgba(21,101,192,0.11); transition:background 0.2s;">Ask DigiBuddy</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

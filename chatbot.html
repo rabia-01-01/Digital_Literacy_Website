@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DigiBuddy AI Chat | Empowering Digital Literacy!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="tagline">Empowering Digital Literacy!</div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="chatbot.html" class="active">AI Chat</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+    <div class="accessibility-bar">
+        <button onclick="changeFontSize(1)">A+</button>
+        <button onclick="changeFontSize(-1)">A-</button>
+        <select id="languageSelect" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="es">Español</option>
+        </select>
+        <button onclick="startVoiceCommand()">🎤 Voice</button>
+    </div>
+    <div class="container">
+        <h2>Ask DigiBuddy!</h2>
+        <div id="chat-window"
+            style="background:#e1dede8b; border-radius:12px; min-height:300px; max-width:600px; margin:auto; padding:1.5rem; box-shadow:0 2px 16px rgba(21,101,192,0.07);">
+        </div>
+        <form id="chat-form"
+            style="display:flex; gap:8px; margin-top:1rem; max-width:600px; margin-left:auto; margin-right:auto;">
+            <input type="text" id="user-input" placeholder="Type your question..."
+                style="flex:1; padding:10px; border-radius:8px; border:1px solid #bbb;">
+            <button type="submit" id="send-btn" onclick="sendMessage()"
+                style="background:var(--accent); color:#fff; border:none; border-radius:8px; padding:0 18px; font-size:1rem;">Send</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+
+</body>
+
+</html>

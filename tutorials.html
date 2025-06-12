@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorials | Empowering Digital Literacy!</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="tagline">Empowering Digital Literacy!</div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tutorials.html" class="active">Tutorials</a>
+        <a href="chatbot.html">AI Chat</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+    <div class="accessibility-bar">
+        <button onclick="changeFontSize(1)">A+</button>
+        <button onclick="changeFontSize(-1)">A-</button>
+        <select id="languageSelect" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="es">Español</option>
+        </select>
+        <button onclick="startVoiceCommand()">🎤 Voice</button>
+    </div>
+    <div class="container">
+        <h1><strong>Easy Tutorials</strong></h1>
+        <div class="tutorial-cards">
+            <div class="tutorial-card">
+                <img src="assets/whatsapp.png" alt="WhatsApp">
+                <h3>WhatsApp Basics</h3>
+                <p>Learn to send messages, photos, and make calls easily.</p>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe class="w-full h-96 rounded shadow" src="https://www.youtube.com/embed/iHUBPKbRwFA?si=oyM87T8CL9vFw2dZ"
+                        title="WhatsApp Tutorial Guidelines Video" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <img src="assets/paytm.png" alt="Paytm">
+                <h3>Paytm Guide</h3>
+                <p>Pay bills, send money, and stay safe with digital payments.</p>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe class="w-full h-96 rounded shadow" src="https://www.youtube.com/embed/-EihcGM1N5g"
+                        title="Paytm Guidelines Video" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <img src="assets/maps.png" alt="Google Maps">
+                <h3>Google Maps</h3>
+                <p>Find places, get directions, and explore your city with ease.</p>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe class="w-full h-96 rounded shadow" src="https://www.youtube.com/embed/XQUaQpoF8xE?si=hOatpPPKxM-oJqMP"
+                        title="Google Map Tutorials" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback | Empowering Digital Literacy!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="tagline">Empowering Digital Literacy!</div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="chatbot.html">AI Chat</a>
+        <a href="feedback.html" class="active">Feedback</a>
+    </nav>
+    <div class="accessibility-bar">
+        <button onclick="changeFontSize(1)">A+</button>
+        <button onclick="changeFontSize(-1)">A-</button>
+        <select id="languageSelect" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="es">Español</option>
+        </select>
+        <button onclick="startVoiceCommand()">🎤 Voice</button>
+    </div>
+    <div class="container">
+        <h2>Feedback & Suggestions</h2>
+        <form class="feedback-form" onsubmit="submitFeedback(event)">
+            <label for="name">Name (optional):</label>
+            <input type="text" id="name" name="name">
+            <label for="feedback">Your Feedback or Suggestion:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+            <button id="feedback-btn" type="submit" onclick="submitFeedback">Submit</button>
+        </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>

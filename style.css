@@ -1,0 +1,177 @@
+:root {
+    --primary: #0f4b8f;
+    --accent: #30e039;
+    --bg: #f3f6fb;
+    --text: #222;
+    --card-bg: #f2efef51;
+    --card-shadow: 0 2px 16px rgba(23, 102, 187, 0.31);
+    --font-size: 18px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, rgb(206, 194, 28) 0%, #f19509 50%, #ec34ce 99%);
+    color: var(--text);
+    margin: 0;
+    font-size: var(--font-size);
+    transition: font-size 0.2s;
+}
+
+header {
+    background: var(--primary);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+nav {
+    background: #eff8a6;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.05);
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--accent);
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.tagline {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: var(--accent);
+    text-align: center;
+    font-weight: bold;
+}
+
+.tutorial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.tutorial-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    width: 260px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 4px 24px rgba(21, 101, 192, 0.10);
+}
+
+.tutorial-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+}
+
+.tutorial-card h3 {
+    margin: 0.5rem 0 1rem 0;
+    color: var(--primary);
+}
+
+.tutorial-card video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.accessibility-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    gap: 2rem;
+    padding: 1rem;
+    background: #d5edfe;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.05);
+}
+
+.accessibility-bar button,
+.accessibility-bar select {
+    font-size: 1.3em;
+    padding: 0.4em 1.5em;
+    border-radius: 8px;
+    border: 2px solid #777474;
+    background: #f4e8da97;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.accessibility-bar button:focus,
+.accessibility-bar select:focus {
+    outline: 2px solid var(--primary);
+}
+
+.feedback-form {
+    background: #cecccc47;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.feedback-form label {
+    display: block;
+    margin: 1rem 0 0.3rem 0;
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 90%;
+    padding: 0.7em;
+    border-radius: 7px;
+    border: 1px solid #bbb;
+    font-size: 1em;
+}
+
+.feedback-form button {
+    margin-top: 1.5rem;
+    background: var(--accent);
+    color: #dfdcdc;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 2em;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background: #2e7031;
+}
+
+
+@media (max-width: 700px) {
+    .tutorial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
